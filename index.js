@@ -6,8 +6,9 @@ module.exports = {
   // extends: ['@yoyoys/vue-typescript-prettier-airbnb'],
   extends: ['plugin:vue/essential', '@vue/prettier', '@vue/airbnb', '@vue/typescript'],
   rules: {
-    'no-console': 'error',
-    'no-debugger': 'error',
+    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-debugger': 'warn',
+    'import/prefer-default-export': 'off',
     'prettier/prettier': [
       'warn',
       {
