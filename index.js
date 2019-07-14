@@ -17,6 +17,15 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
+    // provide by prettier
+    'semi': 'off',
+    // provide by prettier
+    'arrow-parens': 'off',
+    'object-curly-newline': 'off',
+    'class-methods-use-this': 'off',
+    // https://github.com/typescript-eslint/typescript-eslint/issues/524
+    // no effect for vue right now
+    '@typescript-eslint/explicit-member-accessibility': 'error',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
