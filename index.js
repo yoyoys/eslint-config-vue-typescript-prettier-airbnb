@@ -19,9 +19,11 @@ module.exports = {
     ],
     // provide by prettier
     'semi': 'off',
-    // provide by prettier
     'arrow-parens': 'off',
+    'object-curly-spacing': 'off',
     'object-curly-newline': 'off',
+    'comma-dangle': 'off',
+    'implicit-arrow-linebreak': 'off',
     'class-methods-use-this': 'off',
     // https://github.com/typescript-eslint/typescript-eslint/issues/524
     // no effect for vue right now
