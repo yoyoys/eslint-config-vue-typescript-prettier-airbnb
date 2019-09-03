@@ -25,6 +25,8 @@ module.exports = {
     'comma-dangle': 'off',
     'implicit-arrow-linebreak': 'off',
     'class-methods-use-this': 'off',
+    'indent': 0,
+    'space-before-blocks': 0,
     // https://github.com/typescript-eslint/typescript-eslint/issues/524
     // no effect for vue right now
     '@typescript-eslint/explicit-member-accessibility': 'error',
