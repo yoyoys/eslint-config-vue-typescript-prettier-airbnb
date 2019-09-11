@@ -6,7 +6,7 @@ module.exports = {
   // extends: ['@yoyoys/vue-typescript-prettier-airbnb'],
   extends: ['plugin:vue/essential', '@vue/prettier', '@vue/airbnb', '@vue/typescript'],
   rules: {
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-debugger': 'warn',
     'import/prefer-default-export': 'off',
     'prettier/prettier': [
@@ -25,8 +25,13 @@ module.exports = {
     'comma-dangle': 'off',
     'implicit-arrow-linebreak': 'off',
     'class-methods-use-this': 'off',
-    'indent': 0,
-    'space-before-blocks': 0,
+    'indent': 'off',
+    'space-before-blocks': 'off',
+    'switch-colon-spacing': 'off',
+    'block-spacing': 'off',
+    'comma-spacing': 'off',
+    'space-infix-ops': 'off',
+    'brace-style': 'off',
     // https://github.com/typescript-eslint/typescript-eslint/issues/524
     // no effect for vue right now
     '@typescript-eslint/explicit-member-accessibility': 'error',
