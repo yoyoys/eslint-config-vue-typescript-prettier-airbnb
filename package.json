@@ -1,6 +1,6 @@
 {
   "name": "@yoyoys/eslint-config-vue-typescript-prettier-airbnb",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "my vue lint config for airbnb, prettier, typescript",
   "main": "index.js",
   "scripts": {
