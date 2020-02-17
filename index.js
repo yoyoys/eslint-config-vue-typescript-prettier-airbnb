@@ -3,8 +3,14 @@ module.exports = {
   env: {
     node: true,
   },
-  // extends: ['@yoyoys/vue-typescript-prettier-airbnb'],
-  extends: ['plugin:vue/essential', '@vue/prettier', '@vue/airbnb', '@vue/typescript'],
+  extends: [
+    'plugin:vue/essential',
+    '@vue/prettier',
+    '@vue/airbnb',
+    '@vue/typescript',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
   rules: {
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-debugger': 'warn',
@@ -17,6 +23,9 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
+    // this rule is not ideal for vue functional programming
+    'class-methods-use-this': 'off',
+
     // provide by prettier
     'semi': 'off',
     'arrow-parens': 'off',
@@ -24,7 +33,6 @@ module.exports = {
     'object-curly-newline': 'off',
     'comma-dangle': 'off',
     'implicit-arrow-linebreak': 'off',
-    'class-methods-use-this': 'off',
     'indent': 'off',
     'space-before-blocks': 'off',
     'switch-colon-spacing': 'off',
@@ -32,11 +40,19 @@ module.exports = {
     'comma-spacing': 'off',
     'space-infix-ops': 'off',
     'brace-style': 'off',
-    // https://github.com/typescript-eslint/typescript-eslint/issues/524
-    // no effect for vue right now
-    '@typescript-eslint/explicit-member-accessibility': 'error',
-  },
-  parserOptions: {
-    parser: '@typescript-eslint/parser',
+
+    // additional config
+    '@typescript-eslint/explicit-function-return-type': ['off'],
+    '@typescript-eslint/array-type': ['error', { default: 'array' }],
+    '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'explicit' }],
+    '@typescript-eslint/no-extra-non-null-assertion': ['error'],
+    '@typescript-eslint/no-extraneous-class': ['error', { allowWithDecorator: true }],
+    '@typescript-eslint/promise-function-async': ['error'],
+    '@typescript-eslint/require-array-sort-compare': ['warn'],
+    '@typescript-eslint/restrict-plus-operands': ['error'],
+    '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
+    '@typescript-eslint/switch-exhaustiveness-check': ['warn'],
+    '@typescript-eslint/no-unnecessary-condition': ['error'],
+    '@typescript-eslint/no-floating-promises': ['error'],
   },
 };
