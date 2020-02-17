@@ -54,5 +54,8 @@ module.exports = {
     '@typescript-eslint/switch-exhaustiveness-check': ['warn'],
     '@typescript-eslint/no-unnecessary-condition': ['error'],
     '@typescript-eslint/no-floating-promises': ['error'],
+
+    // not ideal for prototype
+    '@typescript-eslint/no-explicit-any': ['off']
   },
 };
