@@ -1,6 +1,6 @@
 {
   "name": "@yoyoys/eslint-config-vue-typescript-prettier-airbnb",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "my vue lint config for airbnb, prettier, typescript",
   "main": "index.js",
   "scripts": {
@@ -19,18 +19,20 @@
   "author": "yoyoys",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^5.3.0 || ^6.7.2",
-    "typescript": "^3.7.3"
+    "@vue/cli-plugin-eslint": "^4.2.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.0",
+    "typescript": "~3.7.5"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.19.2",
-    "@typescript-eslint/parser": "^2.19.2",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
     "@vue/cli-plugin-eslint": "^4.2.2",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vue": "^6.2.0",
+    "eslint-plugin-vue": "^6.2.1",
     "prettier": "^1.19.1"
   }
 }

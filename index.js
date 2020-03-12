@@ -52,8 +52,9 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': ['error'],
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
     '@typescript-eslint/switch-exhaustiveness-check': ['warn'],
-    '@typescript-eslint/no-unnecessary-condition': ['error'],
     '@typescript-eslint/no-floating-promises': ['error'],
+    '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true }],
+
 
     // not ideal for prototype
     '@typescript-eslint/no-explicit-any': ['off']
