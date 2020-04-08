@@ -40,11 +40,11 @@ module.exports = {
     'comma-spacing': 'off',
     'space-infix-ops': 'off',
     'brace-style': 'off',
+    'no-void': 'off',
 
     // additional config
     '@typescript-eslint/explicit-function-return-type': ['off'],
     '@typescript-eslint/array-type': ['error', { default: 'array' }],
-    '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'explicit' }],
     '@typescript-eslint/no-extra-non-null-assertion': ['error'],
     '@typescript-eslint/no-extraneous-class': ['error', { allowWithDecorator: true }],
     '@typescript-eslint/promise-function-async': ['error'],
@@ -52,11 +52,18 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': ['error'],
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
     '@typescript-eslint/switch-exhaustiveness-check': ['warn'],
-    '@typescript-eslint/no-floating-promises': ['error'],
+    '@typescript-eslint/no-floating-promises': ['warn', , { ignoreVoid: true }],
     '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true }],
 
 
     // not ideal for prototype
-    '@typescript-eslint/no-explicit-any': ['off']
+    '@typescript-eslint/no-explicit-any': ['off'],
+    'max-classes-per-file': 'off',
+
+    // not ideal for strong type constructor
+    'no-useless-constructor': 'off',
+
+    // not ideal for vue file
+    // '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'explicit' }],
   },
 };
