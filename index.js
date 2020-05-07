@@ -52,16 +52,15 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': ['error'],
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
     '@typescript-eslint/switch-exhaustiveness-check': ['warn'],
-    '@typescript-eslint/no-floating-promises': ['warn', , { ignoreVoid: true }],
-    '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true }],
+    '@typescript-eslint/no-floating-promises': ['warn', { ignoreVoid: true }],
+    '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true, allowConstantLoopConditions: true }],
+    '@typescript-eslint/class-name-casing': ['error'],
 
 
     // not ideal for prototype
     '@typescript-eslint/no-explicit-any': ['off'],
     'max-classes-per-file': 'off',
 
-    // not ideal for strong type constructor
-    'no-useless-constructor': 'off',
 
     // not ideal for vue file
     // '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'explicit' }],
